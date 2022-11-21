@@ -8,14 +8,13 @@
     <title>Phần 2 Quản Trị</title>
     <!-- BS4 CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- MY CSS  -->
-    <link rel="stylesheet" href="./asset/css/style.css">
-</head>
+    <link rel="stylesheet" href="../css/style.css">
 
 <body>
     <header class="main_nav_container">
@@ -96,6 +95,7 @@
                                 <th>Hình ảnh</th>
                                 <th>Mô tả</th>
                                 <th>Loại</th>
+                                <th>Cập nhật</th>
                             </thead>
                             <tbody id="tblDanhSachSP"></tbody>
                         </table>
@@ -160,8 +160,8 @@
                             <div class="form-group">
                                 <label for="">Loại sản phẩm: </label>
                                 <select class="form-control" id="loaiSP">
-                                    <option value="phone">IPhone</option>
-                                    <option value="laptop">Samsung</option>
+                                    <option value="iphone">iphone</option>
+                                    <option value="Samsung">Samsung</option>
                                 </select>
                             </div>
                         </div>
@@ -191,12 +191,11 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js" integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./models/products.js"></script>
-    <script src="./service/products.js"></script>
-    <script src="./controllers/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../modals/products.js"></script>
+    <script src="../services/products.js"></script>
+    <script src="../controllers/index.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
+// Khai báo lớp đối tượng
 function Products(name, price, screen, backCamera, frontCamera, img, desc, type) {
-    this.name = name;
-    this.price = price;
+    this.name = name,
+    this.price = price,
     this.screen = screen;
     this.backCamera = backCamera;
     this.frontCamera = frontCamera;
@@ -8,3 +9,4 @@ function Products(name, price, screen, backCamera, frontCamera, img, desc, type)
     this.desc = desc;
     this.type = type;
 }
+
