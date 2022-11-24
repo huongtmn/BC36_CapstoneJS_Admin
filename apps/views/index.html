@@ -121,49 +121,60 @@
                         </div>
                         <!-- Modal body -->
                         <div class="modal-body">
-                            <div class="form-group">
-                                <label>Tên Sản Phẩm</label>
-                                <input id="TenSP" class="form-control" placeholder="Nhập vào tên sản phẩm" />
-                            </div>
-                            <div class="row">
-                                <div class="col-6 form-group">
-                                    <label>Giá</label>
-                                    <input id="GiaSP" class="form-control" placeholder="Nhập vào giá" />
+                            <form role="form" id="resetForm">
+                                <div class="form-group">
+                                    <label>Tên Sản Phẩm</label>
+                                    <input id="tenSP" class="form-control" placeholder="Nhập vào tên sản phẩm" />
+                                    <span id="tbTen"></span>
                                 </div>
-                                <div class="col-6 form-group">
-                                    <label>Màn hình</label>
-                                    <input id="ManHinhSP" class="form-control" placeholder="Kích thước màn hình" />
+                                <div class="row">
+                                    <div class="col-6 form-group">
+                                        <label>Giá</label>
+                                        <input id="giaSP" class="form-control" placeholder="Nhập vào giá" />
+                                        <span id="tbGia"></span>
+                                    </div>
+                                    <div class="col-6 form-group">
+                                        <label>Màn hình</label>
+                                        <input id="manHinhSP" class="form-control" placeholder="Kích thước màn hình" />
+                                        <span id="tbManHinh"></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 form-group">
-                                    <label>Camera sau</label>
-                                    <input id="CamSauSP" class="form-control" placeholder="MP" />
+                                <div class="row">
+                                    <div class="col-6 form-group">
+                                        <label>Camera sau</label>
+                                        <input id="camSauSP" class="form-control" placeholder="MP" />
+                                        <span id="tbCamSau"></span>
+                                    </div>
+                                    <div class="col-6 form-group">
+                                        <label>Camera trước</label>
+                                        <input id="camTruocSP" class="form-control" placeholder="MP" />
+                                        <span id="tbCamTruoc"></span>
+                                    </div>
                                 </div>
-                                <div class="col-6 form-group">
-                                    <label>Camera trước</label>
-                                    <input id="CamTruocSP" class="form-control" placeholder="MP" />
+    
+                                <div class="row">
+                                    <div class="col-6 form-group">
+                                        <label>Hình ảnh</label>
+                                        <input id="hinhSP" class="form-control" placeholder=" Hình ảnh sản phẩm" />
+                                        <span id="tbHinhSP"></span>
+                                    </div>
+                                    <div class="col-6 form-group">
+                                        <label>Mô tả</label>
+                                        <input id="moTaSP" class="form-control" placeholder="Mô tả" />
+                                        <span id="tbMoTa"></span>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-6 form-group">
-                                    <label>Hình ảnh</label>
-                                    <input id="HinhSP" class="form-control" placeholder=" Hình ảnh sản phẩm" />
+                                
+                                <div class="form-group">
+                                    <label for="">Loại sản phẩm: </label>
+                                    <select class="form-control" id="loaiSP">
+                                        <option value="">Chọn loại</option>
+                                        <option value="iphone">iphone</option>
+                                        <option value="Samsung">Samsung</option>
+                                    </select>
+                                    <span id="tbLoaiSP"></span>
                                 </div>
-                                <div class="col-6 form-group">
-                                    <label>Mô tả</label>
-                                    <input id="MoTaSP" class="form-control" placeholder="Mô tả" />
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="">Loại sản phẩm: </label>
-                                <select class="form-control" id="loaiSP">
-                                    <option value="iphone">iphone</option>
-                                    <option value="Samsung">Samsung</option>
-                                </select>
-                            </div>
+                            </form>
                         </div>
                         <!-- Modal footer -->
                         <div class="modal-footer"></div>
