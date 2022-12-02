@@ -212,7 +212,7 @@ const validateField = (name, price, screen, backCamera, frontCamera, img, desc, 
     return checkFlg;
 }
 
-// Ser error mess
+// Ser error message
 const setErr = (elementById, errorMess) => document.getElementById(elementById).innerHTML = errorMess;
 
 // Reset form nếu tắt modal 
